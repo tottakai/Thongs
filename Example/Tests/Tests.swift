@@ -4,7 +4,7 @@ import Quick
 import Nimble
 import Thongs
 
-class TableOfContentsSpec: QuickSpec {
+class ThongsSpec: QuickSpec {
     override func spec() {
         describe("these will fail") {
 
