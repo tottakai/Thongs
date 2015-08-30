@@ -1,0 +1,25 @@
+{
+  "name": "Thongs",
+  "version": "0.1.0",
+  "summary": "A short description of Thongs.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Thongs",
+  "license": "MIT",
+  "authors": {
+    "Tomi Koskinen": "tomi.koskinen@welho.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Thongs.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Thongs": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
