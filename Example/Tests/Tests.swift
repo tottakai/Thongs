@@ -1,11 +1,9 @@
-// https://github.com/Quick/Quick
-
 import Quick
 import Nimble
 import Thongs
 
-let large = UIFont.boldSystemFontOfSize(23)
-let small = UIFont.boldSystemFontOfSize(11)
+let largeFont = UIFont.boldSystemFontOfSize(23)
+let smallFont = UIFont.boldSystemFontOfSize(11)
 
 
 class ThongsSpec: QuickSpec {
@@ -22,9 +20,20 @@ class ThongsSpec: QuickSpec {
             
             it("large font string length matches string length") {
                 let example = "test string"
-                let sample = ThongsFont(large)(ThongsString(example))
+                let sample = ThongsFont(largeFont)(ThongsString(example))
                 expect(sample.length) == count(example)
             }
+
+            it("operator piping produced same string as function composition") {
+                let example = "test string"
+                let red = ThongsColor(UIColor.redColor())
+                let large = ThongsFont(largeFont)
+                let result = (red |>> large)(ThongsString(example))
+                
+                expect(result.length) == count(example)
+                expect(result.string) == example
+            }
+        
         }
     }
 }

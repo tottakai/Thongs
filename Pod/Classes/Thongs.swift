@@ -32,3 +32,18 @@ public func ThongsConcat(comp1: NSAttributedString) -> Composer {
         return s
     }
 }
+
+// Operators
+/*
+infix operator |>> { associativity left }
+
+public func |>> ()*/
+
+infix operator |>> { associativity left }
+
+public func |>> (composer1: Composer, composer2: Composer) -> Composer {
+    return { str in
+        composer2(composer1(str))
+    }
+}
+
