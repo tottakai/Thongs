@@ -4,46 +4,26 @@ import Quick
 import Nimble
 import Thongs
 
+let large = UIFont.boldSystemFontOfSize(23)
+let small = UIFont.boldSystemFontOfSize(11)
+
+
 class ThongsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("Thongs") {
 
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+            it("attributed string length is equal to created string length") {
+//                let a = color(UIColor.redColor())(font(small)(string("bar")))
+                //let b = font(large)(string("foo"))
+                //concat(a)(b)
+                let example = "foo"
+                expect(ThongsString(example).length) == count(example)
             }
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+            it("large font string length matches string length") {
+                let example = "test string"
+                let sample = ThongsFont(large)(ThongsString(example))
+                expect(sample.length) == count(example)
             }
         }
     }
