@@ -34,16 +34,26 @@ public func ThongsConcat(comp1: NSAttributedString) -> Composer {
 }
 
 // Operators
-/*
-infix operator |>> { associativity left }
 
-public func |>> ()*/
+infix operator ~~> { associativity right }
 
-infix operator |>> { associativity left }
+public func ~~> (composer: Composer, text: String) -> NSAttributedString {
+    return { composer(ThongsString(text)) }()
+}
 
-public func |>> (composer1: Composer, composer2: Composer) -> Composer {
+
+infix operator <*> { associativity left }
+
+public func <*> (composer1: Composer, composer2: Composer) -> Composer {
     return { str in
         composer2(composer1(str))
     }
 }
 
+//concat(a)(b)
+
+infix operator <+> { associativity left }
+
+public func <+> (text1: NSAttributedString, text2: NSAttributedString) -> NSAttributedString {
+    return ThongsConcat(text1)(text2)
+}
