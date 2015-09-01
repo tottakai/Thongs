@@ -45,18 +45,14 @@ class ThongsSpec: QuickSpec {
             }
             
             it("string concatenation with function composition") {
-                let part1 = "two"
-                let part2 = "three"
                 let red = ThongsColor(UIColor.redColor())
                 let blue = ThongsColor(UIColor.blueColor())
                 let large = ThongsFont(largeFont)
                 let small = ThongsFont(smallFont)
-                let result1 = (red <*> large) ~~> part1
-                let result2 = (small <*> blue) ~~> part2
-                let result = result1 <+> result2
+                let result = (red <*> large) ~~> "two" <+> (small <*> blue) ~~> "three"
                 
-                expect(result.length) == count(part1) + count(part2)
-                expect(result.string) == part1 + part2
+                expect(result.length) == count("twothree")
+                expect(result.string) == "twothree"
             }
         }
     }

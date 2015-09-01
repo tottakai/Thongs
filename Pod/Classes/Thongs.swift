@@ -35,14 +35,14 @@ public func ThongsConcat(comp1: NSAttributedString) -> Composer {
 
 // Operators
 
-infix operator ~~> { associativity right }
+infix operator ~~> { associativity right precedence 100}
 
 public func ~~> (composer: Composer, text: String) -> NSAttributedString {
     return { composer(ThongsString(text)) }()
 }
 
 
-infix operator <*> { associativity left }
+infix operator <*> { associativity left precedence 200 }
 
 public func <*> (composer1: Composer, composer2: Composer) -> Composer {
     return { str in
@@ -52,7 +52,7 @@ public func <*> (composer1: Composer, composer2: Composer) -> Composer {
 
 //concat(a)(b)
 
-infix operator <+> { associativity left }
+infix operator <+> { associativity right precedence 30 }
 
 public func <+> (text1: NSAttributedString, text2: NSAttributedString) -> NSAttributedString {
     return ThongsConcat(text1)(text2)
