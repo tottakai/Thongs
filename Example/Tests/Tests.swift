@@ -12,20 +12,20 @@ class ThongsSpec: QuickSpec {
 
             it("attributed string length is equal to created string length") {
                 let example = "foo"
-                expect(ThongsString(example).length) == count(example)
+                expect(thongs_string(example).length) == count(example)
             }
             
             it("large font string length matches string length") {
                 let example = "test string"
-                let sample = ThongsFont(largeFont)(ThongsString(example))
+                let sample = thongs_font(largeFont)(thongs_string(example))
                 expect(sample.length) == count(example)
             }
 
             it("operator piping produced same string as function composition") {
                 let example = "test string"
-                let red = ThongsColor(UIColor.redColor())
-                let large = ThongsFont(largeFont)
-                let result = (red <*> large)(ThongsString(example))
+                let red = thongs_color(UIColor.redColor())
+                let large = thongs_font(largeFont)
+                let result = (red <*> large)(thongs_string(example))
                 
                 expect(result.length) == count(example)
                 expect(result.string) == example
@@ -33,8 +33,8 @@ class ThongsSpec: QuickSpec {
         
             it("function composition") {
                 let example = "test string"
-                let red = ThongsColor(UIColor.redColor())
-                let large = ThongsFont(largeFont)
+                let red = thongs_color(UIColor.redColor())
+                let large = thongs_font(largeFont)
                 let result = (red <*> large) ~~> example
                 
                 expect(result.length) == count(example)
@@ -42,10 +42,10 @@ class ThongsSpec: QuickSpec {
             }
             
             it("string concatenation with function composition") {
-                let red = ThongsColor(UIColor.redColor())
-                let blue = ThongsColor(UIColor.blueColor())
-                let large = ThongsFont(largeFont)
-                let small = ThongsFont(smallFont)
+                let red = thongs_color(UIColor.redColor())
+                let blue = thongs_color(UIColor.blueColor())
+                let large = thongs_font(largeFont)
+                let small = thongs_font(smallFont)
                 let result = (red <*> large) ~~> "two" <+> (small <*> blue) ~~> "three"
                 
                 expect(result.length) == count("twothree")
@@ -53,16 +53,16 @@ class ThongsSpec: QuickSpec {
             }
 
             it("create string formatter") {
-                let formatter = ThongsColor(UIColor.redColor()) <*> ThongsFont(largeFont)
-                let formatter2 = ThongsColor(UIColor.blueColor()) <*> ThongsFont(smallFont)
+                let formatter = thongs_color(UIColor.redColor()) <*> thongs_font(largeFont)
+                let formatter2 = thongs_color(UIColor.blueColor()) <*> thongs_font(smallFont)
                 let result = formatter ~~> "two" <+> formatter2 ~~> "three"
                 
                 expect(result.length) == count("twothree")
                 expect(result.string) == "twothree"
             }
             it("create string formatter and apply it to string") {
-                let formatter = ThongsColor(UIColor.redColor()) <*> ThongsFont(largeFont)
-                let result = formatter(ThongsString("jee"))
+                let formatter = thongs_color(UIColor.redColor()) <*> thongs_font(largeFont)
+                let result = formatter(thongs_string("jee"))
                 
                 expect(result.length) == count("jee")
                 expect(result.string) == "jee"
