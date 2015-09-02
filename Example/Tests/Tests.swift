@@ -11,9 +11,6 @@ class ThongsSpec: QuickSpec {
         describe("Thongs") {
 
             it("attributed string length is equal to created string length") {
-//                let a = color(UIColor.redColor())(font(small)(string("bar")))
-                //let b = font(large)(string("foo"))
-                //concat(a)(b)
                 let example = "foo"
                 expect(ThongsString(example).length) == count(example)
             }
@@ -54,6 +51,23 @@ class ThongsSpec: QuickSpec {
                 expect(result.length) == count("twothree")
                 expect(result.string) == "twothree"
             }
+
+            it("create string formatter") {
+                let formatter = ThongsColor(UIColor.redColor()) <*> ThongsFont(largeFont)
+                let formatter2 = ThongsColor(UIColor.blueColor()) <*> ThongsFont(smallFont)
+                let result = formatter ~~> "two" <+> formatter2 ~~> "three"
+                
+                expect(result.length) == count("twothree")
+                expect(result.string) == "twothree"
+            }
+            it("create string formatter and apply it to string") {
+                let formatter = ThongsColor(UIColor.redColor()) <*> ThongsFont(largeFont)
+                let result = formatter(ThongsString("jee"))
+                
+                expect(result.length) == count("jee")
+                expect(result.string) == "jee"
+            }
+
         }
     }
 }
