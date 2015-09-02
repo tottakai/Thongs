@@ -55,10 +55,10 @@ class ThongsSpec: QuickSpec {
             it("create string formatter") {
                 let formatter = thongs_color(UIColor.redColor()) <*> thongs_font(largeFont)
                 let formatter2 = thongs_color(UIColor.blueColor()) <*> thongs_font(smallFont)
-                let result = formatter ~~> "two" <+> formatter2 ~~> "three"
+                let result = formatter ~~> "two" <+> thongs_string(" ") <+> formatter2 ~~> "three"
                 
-                expect(result.length) == count("twothree")
-                expect(result.string) == "twothree"
+                expect(result.length) == count("two three")
+                expect(result.string) == "two three"
             }
             it("create string formatter and apply it to string") {
                 let formatter = thongs_color(UIColor.redColor()) <*> thongs_font(largeFont)
