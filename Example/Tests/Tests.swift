@@ -50,6 +50,13 @@ class ThongsSpec: QuickSpec {
                 
                 expect(result.length) == count("twothree")
                 expect(result.string) == "twothree"
+                
+                var range = NSMakeRange(0, 3)
+                let attrs = result.attributesAtIndex(0, effectiveRange: &range)
+                print(attrs)
+                expect(attrs.count) == 2
+                expect(attrs["NSColor"]!.description) == "UIDeviceRGBColorSpace 1 0 0 1"
+                expect(attrs["NSFont"]!.description).to(contain("font-family: \".HelveticaNeueInterface-MediumP4\"; font-weight: bold; font-style: normal; font-size: 23.00pt"))
             }
 
             it("create string formatter") {
