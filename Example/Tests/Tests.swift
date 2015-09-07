@@ -8,7 +8,7 @@ let smallFont = UIFont.boldSystemFontOfSize(11)
 extension NSAttributedString {
     func attributesAt(loc: Int, _ len: Int) -> [NSObject : AnyObject] {
         var range = NSMakeRange(loc, len)
-        return self.attributesAtIndex(0, effectiveRange: &range)
+        return self.attributesAtIndex(loc, effectiveRange: &range)
     }
 }
 
@@ -68,17 +68,18 @@ class ThongsSpec: QuickSpec {
                 
                 expect(result.length) == count("twothree")
                 expect(result.string) == "twothree"
-                
-                var range = NSMakeRange(0, 3)
-                let attrs = result.attributesAtIndex(0, effectiveRange: &range)
-                print(attrs)
-                expect(attrs.count) == 2
-                expect(attrs["NSColor"]!.description) == "UIDeviceRGBColorSpace 1 0 0 1"
-                expect(attrs["NSFont"]!.description).to(contain("font-family: \".HelveticaNeueInterface-MediumP4\"; font-weight: bold; font-style: normal; font-size: 23.00pt"))
-                
-                let s = result.attributesAt(0, 3)
-                expect(s).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
-                expect(s).to(containsAttribute("NSFont", "font-family: \".HelveticaNeueInterface-MediumP4\"; font-weight: bold; font-style: normal; font-size: 23.00pt"))
+  
+                let attributesOfFirstWord = result.attributesAt(0, 3)
+                expect(attributesOfFirstWord.count) == 2
+                expect(attributesOfFirstWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
+                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".HelveticaNeueInterface-MediumP4\"; font-weight: bold"))
+                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 23.00pt"))
+
+                let attributesOfSecondWord = result.attributesAt(3, 5)
+                expect(attributesOfFirstWord.count) == 2
+                expect(attributesOfSecondWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 0 0 1 1"))
+                expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-family: \".HelveticaNeueInterface-MediumP4\"; font-weight: bold"))
+                expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 11.00pt"))
             }
 
             it("create string formatter") {
