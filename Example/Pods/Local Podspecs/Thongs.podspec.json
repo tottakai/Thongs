@@ -1,7 +1,7 @@
 {
   "name": "Thongs",
-  "version": "0.1.0",
-  "summary": "A short description of Thongs.",
+  "version": "0.9.0",
+  "summary": "Functional library for Attributed strings.",
   "description": "",
   "homepage": "https://github.com/<GITHUB_USERNAME>/Thongs",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/<GITHUB_USERNAME>/Thongs.git",
-    "tag": "0.1.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "8.0"
