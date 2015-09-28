@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+    A functional NSAttributedString builder, allows composition of a complex NSAttributedString from multiple parts with different style attributes.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Thongs"
+  s.homepage         = "https://github.com/tottakai/Thongs"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Tomi Koskinen" => "tomi.koskinen@welho.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Thongs.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/tottakai/Thongs.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
