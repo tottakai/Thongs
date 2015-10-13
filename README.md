@@ -22,7 +22,7 @@ pod "Thongs"
 
 ## Author
 
-Tomi Koskinen, tomi.koskinen@welho.com
+Tomi Koskinen, tomi.koskinen@welho.com 
 
 ## License
 
