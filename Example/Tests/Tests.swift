@@ -56,7 +56,6 @@ class ThongsSpec: QuickSpec {
 
                 let attributesOfFirstWord = sample.attributesAt(0, example.length)
                 expect(attributesOfFirstWord.count) == 1
-                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".SFUIDisplay-Semibold\""))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-weight: bold"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-size: 23.00pt"))
@@ -72,7 +71,6 @@ class ThongsSpec: QuickSpec {
                 let attributesOfFirstWord = result.attributesAt(0, result.length)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfFirstWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
-                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".SFUIDisplay-Semibold\""))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-weight: bold"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-size: 23.00pt"))
@@ -100,7 +98,6 @@ class ThongsSpec: QuickSpec {
                 let attributesOfFirstWord = result.attributesAt(0, example.length)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfFirstWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
-                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".SFUIDisplay-Semibold\""))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-weight: bold"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-size: 23.00pt"))
@@ -119,13 +116,11 @@ class ThongsSpec: QuickSpec {
                 let attributesOfFirstWord = result.attributesAt(0, 3)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfFirstWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
-                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".SFUIDisplay-Semibold\"; font-weight: bold"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 23.00pt"))
 
                 let attributesOfSecondWord = result.attributesAt(3, 5)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfSecondWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 0 0 1 1"))
-                expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-family: \".SFUIText-Semibold\"; font-weight: bold"))
                 expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 11.00pt"))
             }
 
@@ -140,7 +135,6 @@ class ThongsSpec: QuickSpec {
                 let attributesOfFirstWord = result.attributesAt(0, 3)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfFirstWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 1 0 0 1"))
-                expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-family: \".SFUIDisplay-Semibold\"; font-weight: bold"))
                 expect(attributesOfFirstWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 23.00pt"))
 
                 let attributesOfSpace = result.attributesAt(3, 1)
@@ -149,7 +143,6 @@ class ThongsSpec: QuickSpec {
                 let attributesOfSecondWord = result.attributesAt(4, 5)
                 expect(attributesOfFirstWord.count) == 2
                 expect(attributesOfSecondWord).to(containsAttribute("NSColor", "UIDeviceRGBColorSpace 0 0 1 1"))
-                expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-family: \".SFUIText-Semibold\"; font-weight: bold"))
                 expect(attributesOfSecondWord).to(containsAttribute("NSFont", "font-style: normal; font-size: 11.00pt"))
             }
         }
