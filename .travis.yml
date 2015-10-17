@@ -1,7 +1,3 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 language: objective-c
 osx_image: xcode7
 
@@ -19,8 +15,7 @@ before_install:
 install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail
-- set -o pipefail && xcodebuild test -workspace Example/Thongs.xcworkspace -scheme Thongs-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme Thongs-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 #- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme "$SCHEME"" -sdk "$SDK" -destination "$DESTINATION"
 #	-configuration ONLY_ACTIVE_ARCH=NO test | xcpretty -c
 - pod lib lint --quick
