@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		61E73E69E64C043F05B265B0 /* Pods_Thongs_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4257900F0D07EDD41E88A61C /* Pods_Thongs_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B1D889F61BD293C400DB1D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D889F11BD293C400DB1D49 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		B1D889F71BD293C400DB1D49 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B1D889F21BD293C400DB1D49 /* Base.lproj */; settings = {ASSET_TAGS = (); }; };
-		B1D889F81BD293C400DB1D49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D889F31BD293C400DB1D49 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		B1D889F91BD293C400DB1D49 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D889F41BD293C400DB1D49 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
-		B1D889FA1BD293C400DB1D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D889F51BD293C400DB1D49 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B1D88A021BD2953900DB1D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D88A011BD2953900DB1D49 /* AppDelegate.swift */; };
 		B1D88A041BD2953900DB1D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D88A031BD2953900DB1D49 /* ViewController.swift */; };
 		B1D88A071BD2953900DB1D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D88A051BD2953900DB1D49 /* Main.storyboard */; };
@@ -31,11 +26,6 @@
 		67AD229A1DA4F2F5F72E36BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7387D569C7B9E1FC547EA701 /* Thongs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Thongs.podspec; path = ../Thongs.podspec; sourceTree = "<group>"; };
 		AA3FD19CD27799ED769C4B31 /* Pods-Thongs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thongs_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thongs_Tests/Pods-Thongs_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B1D889F11BD293C400DB1D49 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Thongs/AppDelegate.swift; sourceTree = "<group>"; };
-		B1D889F21BD293C400DB1D49 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = Thongs/Base.lproj; sourceTree = "<group>"; };
-		B1D889F31BD293C400DB1D49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Thongs/Images.xcassets; sourceTree = "<group>"; };
-		B1D889F41BD293C400DB1D49 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Thongs/Info.plist; sourceTree = "<group>"; };
-		B1D889F51BD293C400DB1D49 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Thongs/ViewController.swift; sourceTree = "<group>"; };
 		B1D889FF1BD2953900DB1D49 /* Thongs_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thongs_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D88A011BD2953900DB1D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1D88A031BD2953900DB1D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				B1D889F01BD292EA00DB1D49 /* Example for Thongs */,
+				B1D88A001BD2953900DB1D49 /* Example for Thongs */,
 				607FACE81AFB9204008FA782 /* Tests */,
-				B1D88A001BD2953900DB1D49 /* Thongs_Example */,
 				607FACD11AFB9204008FA782 /* Products */,
 				10E559D16B8EAE54851823BA /* Pods */,
 				83323BB3F3627965CAC2322A /* Frameworks */,
@@ -134,19 +123,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B1D889F01BD292EA00DB1D49 /* Example for Thongs */ = {
-			isa = PBXGroup;
-			children = (
-				B1D889F11BD293C400DB1D49 /* AppDelegate.swift */,
-				B1D889F21BD293C400DB1D49 /* Base.lproj */,
-				B1D889F31BD293C400DB1D49 /* Images.xcassets */,
-				B1D889F41BD293C400DB1D49 /* Info.plist */,
-				B1D889F51BD293C400DB1D49 /* ViewController.swift */,
-			);
-			name = "Example for Thongs";
-			sourceTree = "<group>";
-		};
-		B1D88A001BD2953900DB1D49 /* Thongs_Example */ = {
+		B1D88A001BD2953900DB1D49 /* Example for Thongs */ = {
 			isa = PBXGroup;
 			children = (
 				B1D88A011BD2953900DB1D49 /* AppDelegate.swift */,
@@ -156,6 +133,7 @@
 				B1D88A0A1BD2953900DB1D49 /* LaunchScreen.storyboard */,
 				B1D88A0D1BD2953900DB1D49 /* Info.plist */,
 			);
+			name = "Example for Thongs";
 			path = Thongs_Example;
 			sourceTree = "<group>";
 		};
@@ -245,9 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D889F71BD293C400DB1D49 /* Base.lproj in Resources */,
-				B1D889F81BD293C400DB1D49 /* Images.xcassets in Resources */,
-				B1D889F91BD293C400DB1D49 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D889FA1BD293C400DB1D49 /* ViewController.swift in Sources */,
-				B1D889F61BD293C400DB1D49 /* AppDelegate.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
