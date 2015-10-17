@@ -21,5 +21,5 @@ install:
 script:
 - set -o pipefail
 - xcodebuild test -workspace Example/Thongs.xcworkspace -scheme "$SCHEME"" -sdk "$SDK" -destination "$DESTINATION"
-	-destination ONLY_ACTIVE_ARCH=NO test | xcpretty -c
+	-configuration ONLY_ACTIVE_ARCH=NO test | xcpretty -c
 - pod lib lint --quick
