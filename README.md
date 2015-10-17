@@ -1,6 +1,6 @@
 # Thongs
 
-[![CI Status](http://img.shields.io/travis/Tomi Koskinen/Thongs.svg?style=flat)](https://travis-ci.org/Tomi Koskinen/Thongs)
+[![CI Status](http://img.shields.io/travis/tottakai/Thongs.svg?style=flat)](https://travis-ci.org/tottakai/Thongs)
 [![Version](https://img.shields.io/cocoapods/v/Thongs.svg?style=flat)](http://cocoapods.org/pods/Thongs)
 [![License](https://img.shields.io/cocoapods/l/Thongs.svg?style=flat)](http://cocoapods.org/pods/Thongs)
 [![Platform](https://img.shields.io/cocoapods/p/Thongs.svg?style=flat)](http://cocoapods.org/pods/Thongs)
@@ -22,7 +22,7 @@ pod "Thongs"
 
 ## Author
 
-Tomi Koskinen, tomi.koskinen@welho.com 
+Tomi Koskinen, tomi.koskinen@reaktor.fi 
 
 ## License
 
