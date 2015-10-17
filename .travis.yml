@@ -1,11 +1,10 @@
 language: objective-c
 osx_image: xcode7
+xcode_sdk: iphonesimulator9.0
 
 env:
   - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
-  - DESTINATION="OS=9.0,name=iPhone 6" SCHEME="Thongs-Example" SDK=iphonesimulator9.0
-
-xcode_sdk: iphonesimulator9.0
+  - DESTINATION="OS=9.0,name=iPhone 6" SDK=iphonesimulator9.0 WORKSPACE=Example/Thongs.xcworkspace
 
 before_install: 
 - gem install cocoapods
@@ -15,5 +14,14 @@ install:
 
 script:
 - set -o pipefail
-- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+#- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- xcodebuild -workspace Example/Thongs.xcworkspace -scheme Thongs -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
+- xcodebuild -workspace Example/Thongs.xcworkspace -scheme Thongs -sdk "$SDK" -configuration Release -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
+- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme Thongs-Example -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
 - pod lib lint --quick
+
+
+# xcodebuild test -workspace Example/Thongs.xcworkspace -scheme Thongs-Example -sdk iphonesimulator9.0 ONLY_ACTIVE_ARCH=NO
+#- xcodebuild -workspace Example/Thongs.xcworkspace -scheme Thongs -sdk iphonesimulator9.0 -configuration Debug ONLY_ACTIVE_ARCH=NO
+#- xcodebuild -workspace Example/Thongs.xcworkspace -scheme Thongs -sdk iphonesimulator9.0 -configuration Release ONLY_ACTIVE_ARCH=NO
+#- xcodebuild test -workspace Example/Thongs.xcworkspace -scheme Thongs-Example -sdk iphonesimulator9.0 -configuration Debug ONLY_ACTIVE_ARCH=NO
