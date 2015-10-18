@@ -61,7 +61,7 @@ public func thongs_concat(comp1: NSAttributedString) -> Composer {
 
 // Operators
 
-infix operator ~~> { associativity left precedence 100}
+infix operator ~~> { associativity left precedence 190}
 
 public func ~~> (composer: Composer, text: String) -> NSAttributedString {
     return { composer(thongs_string(text)) }()
@@ -79,7 +79,7 @@ public func <*> (composer1: Composer, composer2: Composer) -> Composer {
 
 //concat(a)(b)
 
-infix operator <+> { associativity right precedence 30 }
+infix operator <+> { associativity right precedence 180 }
 
 public func <+> (text1: NSAttributedString, text2: NSAttributedString) -> NSAttributedString {
     return thongs_concat(text1)(text2)

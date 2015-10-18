@@ -38,13 +38,12 @@ class ViewController: UIViewController {
         let formatter5 = bodyTextFont <*> thongs_color(UIColor(red: 245/255, green: 215/255, blue: 110/255, alpha: 1))
         let formatter6 = bodyTextFont <*> thongs_color(UIColor(red: 103/255, green: 65/255, blue: 114/255, alpha: 1))
 
-        let attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
-                             formatter2 ~~> "What guys talk about\n" <+>
-                             formatter3 ~~> "You know\n" <+>
-                             formatter4 ~~> "The finer things in life\n" <+>
-                             formatter5 ~~> "Hahaha\n" <+>
-                             formatter6 ~~> "Check it out\n"
-        textBox.attributedText = attributedText
+        textBox.attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
+                                 formatter2 ~~> "What guys talk about\n" <+>
+                                 formatter3 ~~> "You know\n" <+>
+                                 formatter4 ~~> "The finer things in life\n" <+>
+                                 formatter5 ~~> "Hahaha\n" <+>
+                                 formatter6 ~~> "Check it out\n"
     }
 
     override func didReceiveMemoryWarning() {
