@@ -20,5 +20,6 @@ script:
 - set -o pipefail
 - xcodebuild -workspace "$WORKSPACE" -scheme Thongs -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
 - xcodebuild -workspace "$WORKSPACE" -scheme Thongs -sdk "$SDK" -configuration Release -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
-- xcodebuild test -workspace "$WORKSPACE" -scheme Thongs-Example -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
+- xcodebuild -workspace "$WORKSPACE" -scheme Thongs-Example -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
+- xcodebuild build test -workspace "$WORKSPACE" -scheme Thongs-Example -sdk "$SDK" -configuration Debug -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO
 - pod lib lint --quick
