@@ -23,21 +23,33 @@ class ViewController: UIViewController {
         
         // Attributed string to both text boxes created with Thongs
         let red = thongs_color(UIColor(red: 231/255, green: 76/255, blue: 60/255, alpha: 1))
-        let large = thongs_font(UIFont.systemFontOfSize(30))
+        let large = thongs_font(UIFont.systemFontOfSize(28))
         let kerning = thongs_kerning(1.4)
-        titleLabel.attributedText = (red <*> large <*> kerning)(thongs_string("This thing right here"))
+        let titleFormatter = red <*> large <*> kerning
+        titleLabel.attributedText = titleFormatter(thongs_string("This thing right here"))
         
-        let blue = thongs_color(UIColor(red: 46/255, green: 204/255, blue: 133/255, alpha: 1))
-        let smallFont = thongs_font(UIFont.systemFontOfSize(11))
-        let res = (red <*> large) ~~> "Is lettin all the ladies know" <+> (smallFont <*> blue) ~~> "What guys talk about"
-        textBox.attributedText = res
+        
+        // format the first part of Sisqo's Thong song
+        let bodyTextFont = thongs_font(UIFont.systemFontOfSize(22))
+        let formatter1 = bodyTextFont <*> thongs_color(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1))
+        let formatter2 = bodyTextFont <*> thongs_color(UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1))
+        let formatter3 = bodyTextFont <*> thongs_color(UIColor(red: 232/255, green: 126/255, blue: 4/255, alpha: 1))
+        let formatter4 = bodyTextFont <*> thongs_color(UIColor(red: 191/255, green: 85/255, blue: 236/255, alpha: 1))
+        let formatter5 = bodyTextFont <*> thongs_color(UIColor(red: 245/255, green: 215/255, blue: 110/255, alpha: 1))
+        let formatter6 = bodyTextFont <*> thongs_color(UIColor(red: 103/255, green: 65/255, blue: 114/255, alpha: 1))
+
+        let attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
+                             formatter2 ~~> "What guys talk about\n" <+>
+                             formatter3 ~~> "You know\n" <+>
+                             formatter4 ~~> "The finer things in life\n" <+>
+                             formatter5 ~~> "Hahaha\n" <+>
+                             formatter6 ~~> "Check it out\n"
+        textBox.attributedText = attributedText
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
