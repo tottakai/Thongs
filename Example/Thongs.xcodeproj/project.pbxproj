@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		61E73E69E64C043F05B265B0 /* Pods_Thongs_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4257900F0D07EDD41E88A61C /* Pods_Thongs_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		61E73E69E64C043F05B265B0 /* Pods_Thongs_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4257900F0D07EDD41E88A61C /* Pods_Thongs_Tests.framework */; };
 		B1D88A021BD2953900DB1D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D88A011BD2953900DB1D49 /* AppDelegate.swift */; };
 		B1D88A041BD2953900DB1D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D88A031BD2953900DB1D49 /* ViewController.swift */; };
 		B1D88A071BD2953900DB1D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D88A051BD2953900DB1D49 /* Main.storyboard */; };

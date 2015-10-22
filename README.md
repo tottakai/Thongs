@@ -40,6 +40,8 @@ textBox.attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
 
 <img src="Example/Media/ThongsExample.png" width="317"/>
 
+Supports color, font, kerning, underline and strikethrough, but is easily extendable. Pull requests are welcome.
+
 ## Installation
 
 Thongs is available through [CocoaPods](http://cocoapods.org). To install
