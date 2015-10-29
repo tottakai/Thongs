@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BlueprintIdentifier = "B1D889FE1BD2953900DB1D49"
                BuildableName = "Thongs_Example.app"
                BlueprintName = "Thongs_Example"
                ReferencedContainer = "container:Thongs.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "B1D889FE1BD2953900DB1D49"
             BuildableName = "Thongs_Example.app"
             BlueprintName = "Thongs_Example"
             ReferencedContainer = "container:Thongs.xcodeproj">
@@ -79,7 +79,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "B1D889FE1BD2953900DB1D49"
             BuildableName = "Thongs_Example.app"
             BlueprintName = "Thongs_Example"
             ReferencedContainer = "container:Thongs.xcodeproj">
@@ -98,7 +98,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "B1D889FE1BD2953900DB1D49"
             BuildableName = "Thongs_Example.app"
             BlueprintName = "Thongs_Example"
             ReferencedContainer = "container:Thongs.xcodeproj">
