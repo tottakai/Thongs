@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let formatter5 = bodyTextFontStyle1 <*> Thongs.color(UIColor(red: 245/255, green: 215/255, blue: 110/255, alpha: 1))
         let formatter6 = bodyTextFontStyle2 <*> Thongs.color(UIColor(red: 103/255, green: 65/255, blue: 114/255, alpha: 1))
 
-        textBox.attributedText = (formatter1 ~~> "Is lettin all the ladies know\n") <+>
+        textBox.attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
                                  formatter2 ~~> "What guys talk about\n" <+>
                                  formatter3 ~~> "You know\n" <+>
                                  formatter4 ~~> "The finer things in life\n" <+>
