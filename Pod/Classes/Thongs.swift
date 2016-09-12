@@ -1,13 +1,13 @@
 import Foundation
 
-public typealias Composer = NSAttributedString -> NSAttributedString
+public typealias Composer = (NSAttributedString) -> NSAttributedString
 
-public func thongs_string(string: String) -> NSAttributedString {
+public func thongs_string(_ string: String) -> NSAttributedString {
     return NSAttributedString(string: string)
     
 }
 
-public func thongs_font(font: UIFont) -> Composer {
+public func thongs_font(_ font: UIFont) -> Composer {
     return { attributedString in
         let s = attributedString.mutableCopy() as! NSMutableAttributedString
         s.beginEditing()
@@ -17,7 +17,7 @@ public func thongs_font(font: UIFont) -> Composer {
     }
 }
 
-public func thongs_color(color: UIColor) -> Composer {
+public func thongs_color(_ color: UIColor) -> Composer {
     return { attributedString in
         let s = attributedString.mutableCopy() as! NSMutableAttributedString
         s.addAttribute(NSForegroundColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
@@ -25,7 +25,7 @@ public func thongs_color(color: UIColor) -> Composer {
     }
 }
 
-public func thongs_kerning(kerning: Double) -> Composer {
+public func thongs_kerning(_ kerning: Double) -> Composer {
     return { attributedString in
         let s = attributedString.mutableCopy() as! NSMutableAttributedString
         s.addAttribute(NSKernAttributeName, value: kerning, range: NSMakeRange(0, attributedString.length))
@@ -33,7 +33,7 @@ public func thongs_kerning(kerning: Double) -> Composer {
     }
 }
 
-public func thongs_underline(color: UIColor, style: NSUnderlineStyle) -> Composer {
+public func thongs_underline(_ color: UIColor, style: NSUnderlineStyle) -> Composer {
     return { attributedString in
         let s = attributedString.mutableCopy() as! NSMutableAttributedString
         s.addAttribute(NSUnderlineColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
@@ -42,7 +42,7 @@ public func thongs_underline(color: UIColor, style: NSUnderlineStyle) -> Compose
     }
 }
 
-public func thongs_strikethrough(color: UIColor, style: NSUnderlineStyle) -> Composer {
+public func thongs_strikethrough(_ color: UIColor, style: NSUnderlineStyle) -> Composer {
     return { attributedString in
         let s = attributedString.mutableCopy() as! NSMutableAttributedString
         s.addAttribute(NSStrikethroughColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
@@ -51,10 +51,10 @@ public func thongs_strikethrough(color: UIColor, style: NSUnderlineStyle) -> Com
     }
 }
 
-public func thongs_concat(comp1: NSAttributedString) -> Composer {
+public func thongs_concat(_ comp1: NSAttributedString) -> Composer {
     return { comp2 in
         let s = comp1.mutableCopy() as! NSMutableAttributedString
-        s.appendAttributedString(comp2)
+        s.append(comp2)
         return s
     }
 }
@@ -70,7 +70,7 @@ public func ~~> (composer: Composer, text: String) -> NSAttributedString {
 
 infix operator <*> { associativity left precedence 200 }
 
-public func <*> (composer1: Composer, composer2: Composer) -> Composer {
+public func <*> (composer1: @escaping Composer, composer2: @escaping Composer) -> Composer {
     return { str in
         composer2(composer1(str))
     }
