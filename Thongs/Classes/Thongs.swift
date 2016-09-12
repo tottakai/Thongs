@@ -63,24 +63,24 @@ public enum Thongs {
 }
 // Operators
 
-precedencegroup HighPrecedence {
+precedencegroup LiftPrecedence {
     associativity: left
-    higherThan: NormalPrecedence
+    higherThan: CompositionPrecedence
 }
 
-infix operator ~~> : HighPrecedence
+infix operator ~~> : LiftPrecedence
 
 public func ~~> (composer: @escaping Thongs.Composer, text: String) -> NSAttributedString {
     return { composer(Thongs.string(text)) }()
 }
 
 
-precedencegroup NormalPrecedence {
+precedencegroup CompositionPrecedence {
     associativity: left
-    higherThan: LowPrecedence
+    higherThan: ConcatenationPrecedence
 }
 
-infix operator <*> : NormalPrecedence
+infix operator <*> : CompositionPrecedence
 
 public func <*> (composer1: @escaping Thongs.Composer, composer2: @escaping Thongs.Composer) -> Thongs.Composer {
     return { str in
@@ -91,12 +91,12 @@ public func <*> (composer1: @escaping Thongs.Composer, composer2: @escaping Thon
 
 //concat(a)(b)
 
-precedencegroup LowPrecedence {
+precedencegroup ConcatenationPrecedence {
     associativity: right
     higherThan: AssignmentPrecedence
 }
 
-infix operator <+> : LowPrecedence
+infix operator <+> : ConcatenationPrecedence
 
 public func <+> (text1: NSAttributedString, text2: NSAttributedString) -> NSAttributedString {
     return Thongs.concat(text1)(text2)
