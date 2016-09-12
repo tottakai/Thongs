@@ -7,110 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012A63FB7A8DECF1B48A6C0EA8909029 /* Thongs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E531A12523BABFC82FB9E6576776603 /* Thongs-dummy.m */; };
-		2A5A95B8BBE8FDABF93C6A6E391EB471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		336D63183BCCBB0A98CAB6563788EB4E /* Pods-Thongs_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4B9908A814BB9C4A8D2A8A80A53B4 /* Pods-Thongs_Tests-dummy.m */; };
-		49B4F79C87B73339A869AB93EC4F8C71 /* Thongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A7F1E066A64518E94D245686CCA6 /* Thongs.swift */; };
-		54181D283CDC4C86BAC190FDC9F9C6C0 /* Pods-Thongs_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBCAEA02BC108E6009AD8794BE74DAC /* Pods-Thongs_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E0BCD77D462E575E69E2E8FED28F6D6 /* Thongs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B25253D81B735D858D6DC02352FB9F /* Thongs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAD9FC374D58E792F887E2145E08880D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		E1247A4F882D3B78E67C31C37245FC59 /* Thongs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4767C1506FC44E297F201AA21FC62C41 /* Thongs.bundle */; };
+		1FABEEB9E071FB66DFCA264E4F0BFB1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		370A66D2611E54639C95B9D9FF256690 /* Pods-Thongs_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A87A04D5191F6802CAE2750252CF7F /* Pods-Thongs_Example-dummy.m */; };
+		612B33504981E5223722462AB867D060 /* Pods-Thongs_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BD137F02E8B7D0CA75C4B7DF918F7D /* Pods-Thongs_Tests-dummy.m */; };
+		69E7621EADACA27154C3B662B99F0102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		85752B857209EADCFA67FB47AA2576DD /* Pods-Thongs_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F98221A9CCFAE6EB947A02FCDD9D873 /* Pods-Thongs_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B4D5D101340D3981E265D0D1C55728A /* Thongs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F470527FB51D4DD4A6B4B3DEE53FE80 /* Thongs-dummy.m */; };
+		CA28586ABAEB6C84D635E5CE1E0913BD /* Pods-Thongs_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 874B7A1252287C0C103BBE4BA1DD32AE /* Pods-Thongs_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE0A27D6F2A5701D8E698608F52D55F4 /* Thongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E9BAC22D948007ECDCA7389352F8 /* Thongs.swift */; };
+		D8AE3B88867A57D0F6C2F741BA19FE81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FF1ED97083FD0CBD051DFB205D763BFB /* Thongs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D831C2177B78612151B24DAD63BF5460 /* Thongs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E4349C493E95DBC7C4BF50F9435634A /* PBXContainerItemProxy */ = {
+		49713173321A6D858BBA539153B57206 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 01607277848B4A3948371D2910148F0E;
-			remoteInfo = "Thongs-Thongs";
-		};
-		92A822372061CE611A318FAA9074175B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 788E4DE2E0BA97C6C99F2575FFB5391E;
+			remoteGlobalIDString = 0F1558448F84133FF61AB442DC1F3642;
 			remoteInfo = Thongs;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17CACDADF09C8D119665CF8698645021 /* Pods-Thongs_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thongs_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		18BF7AE882C7F089E749F3AFCED488C1 /* Pods-Thongs_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		23A7EE9BD4B26C0C1155DECD30C746D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E531A12523BABFC82FB9E6576776603 /* Thongs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thongs-dummy.m"; sourceTree = "<group>"; };
-		4767C1506FC44E297F201AA21FC62C41 /* Thongs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thongs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Thongs.xcconfig; sourceTree = "<group>"; };
-		58B25253D81B735D858D6DC02352FB9F /* Thongs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thongs-umbrella.h"; sourceTree = "<group>"; };
-		64622BA78662B38C1C6AF6E45781AAB5 /* Pods-Thongs_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thongs_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		67A60EA7C2A046ACE5F3C1FC3314CCEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF4B9908A814BB9C4A8D2A8A80A53B4 /* Pods-Thongs_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thongs_Tests-dummy.m"; sourceTree = "<group>"; };
-		926B69F0DC705FCCF63992727B742E44 /* Pods-Thongs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0A924BF350483ED3531B1C5F746EF3A9 /* Pods_Thongs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thongs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A87A04D5191F6802CAE2750252CF7F /* Pods-Thongs_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thongs_Example-dummy.m"; sourceTree = "<group>"; };
+		2EB7F83FB7348334D956C3B433E3CD0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F98221A9CCFAE6EB947A02FCDD9D873 /* Pods-Thongs_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thongs_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3B75217777BC1DB0E2B3E64CA91FB696 /* Thongs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thongs-prefix.pch"; sourceTree = "<group>"; };
+		46CA64A35E48EE2308B4B4EDB5A33A01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C836025128174A5CF199864557C5C9F /* Pods-Thongs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Example.release.xcconfig"; sourceTree = "<group>"; };
+		538F67383EC2531FDF4C98409305A5DD /* Pods_Thongs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thongs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1E4A76153F79088C47A7426439160E /* Pods-Thongs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6A00026A1B9496AC9F14896322ECBFDE /* Thongs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Thongs.xcconfig; sourceTree = "<group>"; };
+		6E9A6991FD9C84CC55EF03610D1E6CE1 /* Pods-Thongs_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thongs_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6EE6A08E3D6B13D537787E4E11317E5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7823F7224F0A59AADC794DAB0410D5E8 /* Pods-Thongs_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7CFBE10446D4AC55CD08A4987579F265 /* Pods-Thongs_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Thongs_Example.modulemap"; sourceTree = "<group>"; };
+		7F470527FB51D4DD4A6B4B3DEE53FE80 /* Thongs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thongs-dummy.m"; sourceTree = "<group>"; };
+		874B7A1252287C0C103BBE4BA1DD32AE /* Pods-Thongs_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thongs_Example-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9475A7F1E066A64518E94D245686CCA6 /* Thongs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Thongs.swift; sourceTree = "<group>"; };
-		B2F2288C3C03A3928A2FB8A4D2EBF31F /* Thongs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Thongs.modulemap; sourceTree = "<group>"; };
-		BAE938E1CA4BACA5D172C0A0BC544EFF /* Pods-Thongs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C86CA739D23F5AB2164B2FA60EA69D6A /* Thongs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thongs-prefix.pch"; sourceTree = "<group>"; };
+		945E4562455BBF5FFCBD476F76539CB5 /* Pods-Thongs_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AA16F90E06163638D1BCC43D860533AD /* Thongs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Thongs.modulemap; sourceTree = "<group>"; };
+		B51A7794626037CB45970BFE33ACDC07 /* Pods-Thongs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C86133AE0107625691742588DC224A6B /* Pods-Thongs_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thongs_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C936E8E4049A799ED32CB673EB325FE5 /* Pods-Thongs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thongs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CFBCAEA02BC108E6009AD8794BE74DAC /* Pods-Thongs_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thongs_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E14FA79FFA73AD23F76ABAA7EC7D6500 /* ResourceBundle-Thongs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Thongs-Info.plist"; sourceTree = "<group>"; };
-		E6BC94C8DC823EDE1D4AC2AAC8C4CF01 /* Thongs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thongs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F98D5BE352AED058C2159E05E2A366 /* Pods_Thongs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thongs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F679CE48D484454041E203A73954F449 /* Pods-Thongs_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Tests-resources.sh"; sourceTree = "<group>"; };
-		F6C5ED2F6265846A9D560F3EC39F20DB /* Pods-Thongs_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Thongs_Tests.modulemap"; sourceTree = "<group>"; };
+		D5D88363725C82F2C5D79E75BB3B29C4 /* Pods-Thongs_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Tests-resources.sh"; sourceTree = "<group>"; };
+		D831C2177B78612151B24DAD63BF5460 /* Thongs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thongs-umbrella.h"; sourceTree = "<group>"; };
+		DA43E9BAC22D948007ECDCA7389352F8 /* Thongs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Thongs.swift; sourceTree = "<group>"; };
+		DE35964CE1D1BA896C41DCC76085F851 /* Pods-Thongs_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thongs_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2BD137F02E8B7D0CA75C4B7DF918F7D /* Pods-Thongs_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thongs_Tests-dummy.m"; sourceTree = "<group>"; };
+		E913C3AD8192EE7126DE32E0A64896E2 /* Pods-Thongs_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Thongs_Tests.modulemap"; sourceTree = "<group>"; };
+		F36C6D1AE8EE9CADBD323B32F14B3B96 /* Pods-Thongs_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thongs_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FFA2517BD665AAC019C2577F162E5F92 /* Thongs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thongs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC42899BDF7B283C84741B450E34C86 /* Pods-Thongs_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thongs_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AA22E3E79206624D5F65C40C693A4D6 /* Frameworks */ = {
+		3DBB6AE90E9F0E2EDDD062EC42EA3B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5A95B8BBE8FDABF93C6A6E391EB471 /* Foundation.framework in Frameworks */,
+				D8AE3B88867A57D0F6C2F741BA19FE81 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		730A73E0621AA4932F2EFB04AC2E05AC /* Frameworks */ = {
+		C555FC34A0AA7CF6B20ADFDC1A47BF3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E7621EADACA27154C3B662B99F0102 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F666CAF4FECD0EDE4A5C167F7D4F4CF7 /* Frameworks */ = {
+		CE1C59F006452FF8C7796BB232BD547D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD9FC374D58E792F887E2145E08880D /* Foundation.framework in Frameworks */,
+				1FABEEB9E071FB66DFCA264E4F0BFB1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		155BBD8B25FD8FE0AD56857630841023 /* Targets Support Files */ = {
+		1934B65F60FC39BCEE46D4F280A36935 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				52618CAD4C545FCF552343B026459986 /* Pods-Thongs_Tests */,
+				6EE6A08E3D6B13D537787E4E11317E5F /* Info.plist */,
+				AA16F90E06163638D1BCC43D860533AD /* Thongs.modulemap */,
+				6A00026A1B9496AC9F14896322ECBFDE /* Thongs.xcconfig */,
+				7F470527FB51D4DD4A6B4B3DEE53FE80 /* Thongs-dummy.m */,
+				3B75217777BC1DB0E2B3E64CA91FB696 /* Thongs-prefix.pch */,
+				D831C2177B78612151B24DAD63BF5460 /* Thongs-umbrella.h */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		23DB4152833CC2330E941B9897FFDE9E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9475A7F1E066A64518E94D245686CCA6 /* Thongs.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		38850E55C7C6A50A540B09773D9E10F0 /* Thongs */ = {
-			isa = PBXGroup;
-			children = (
-				B580645D2866BC09AA606032EA4786EA /* Pod */,
-				947AD1ED420E2D1416E64DA675E07DE3 /* Support Files */,
-			);
-			name = Thongs;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Thongs";
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -121,22 +114,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		52618CAD4C545FCF552343B026459986 /* Pods-Thongs_Tests */ = {
+		3E3F210F7BF0A6EDF43319874B25AC99 /* Thongs */ = {
 			isa = PBXGroup;
 			children = (
-				23A7EE9BD4B26C0C1155DECD30C746D4 /* Info.plist */,
-				F6C5ED2F6265846A9D560F3EC39F20DB /* Pods-Thongs_Tests.modulemap */,
-				17CACDADF09C8D119665CF8698645021 /* Pods-Thongs_Tests-acknowledgements.markdown */,
-				64622BA78662B38C1C6AF6E45781AAB5 /* Pods-Thongs_Tests-acknowledgements.plist */,
-				8BF4B9908A814BB9C4A8D2A8A80A53B4 /* Pods-Thongs_Tests-dummy.m */,
-				18BF7AE882C7F089E749F3AFCED488C1 /* Pods-Thongs_Tests-frameworks.sh */,
-				F679CE48D484454041E203A73954F449 /* Pods-Thongs_Tests-resources.sh */,
-				CFBCAEA02BC108E6009AD8794BE74DAC /* Pods-Thongs_Tests-umbrella.h */,
-				BAE938E1CA4BACA5D172C0A0BC544EFF /* Pods-Thongs_Tests.debug.xcconfig */,
-				926B69F0DC705FCCF63992727B742E44 /* Pods-Thongs_Tests.release.xcconfig */,
+				1934B65F60FC39BCEE46D4F280A36935 /* Support Files */,
+				B1CF322F8320A04B50FA30EDF1A462CD /* Thongs */,
+			);
+			name = Thongs;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4595EAA3900110F0E69A5CF792F17BE0 /* Pods-Thongs_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2EB7F83FB7348334D956C3B433E3CD0E /* Info.plist */,
+				E913C3AD8192EE7126DE32E0A64896E2 /* Pods-Thongs_Tests.modulemap */,
+				6E9A6991FD9C84CC55EF03610D1E6CE1 /* Pods-Thongs_Tests-acknowledgements.markdown */,
+				C86133AE0107625691742588DC224A6B /* Pods-Thongs_Tests-acknowledgements.plist */,
+				E2BD137F02E8B7D0CA75C4B7DF918F7D /* Pods-Thongs_Tests-dummy.m */,
+				945E4562455BBF5FFCBD476F76539CB5 /* Pods-Thongs_Tests-frameworks.sh */,
+				D5D88363725C82F2C5D79E75BB3B29C4 /* Pods-Thongs_Tests-resources.sh */,
+				2F98221A9CCFAE6EB947A02FCDD9D873 /* Pods-Thongs_Tests-umbrella.h */,
+				C936E8E4049A799ED32CB673EB325FE5 /* Pods-Thongs_Tests.debug.xcconfig */,
+				5C1E4A76153F79088C47A7426439160E /* Pods-Thongs_Tests.release.xcconfig */,
 			);
 			name = "Pods-Thongs_Tests";
 			path = "Target Support Files/Pods-Thongs_Tests";
+			sourceTree = "<group>";
+		};
+		7875C8DCE8C4CE198948183668BE1304 /* Pods-Thongs_Example */ = {
+			isa = PBXGroup;
+			children = (
+				46CA64A35E48EE2308B4B4EDB5A33A01 /* Info.plist */,
+				7CFBE10446D4AC55CD08A4987579F265 /* Pods-Thongs_Example.modulemap */,
+				DE35964CE1D1BA896C41DCC76085F851 /* Pods-Thongs_Example-acknowledgements.markdown */,
+				F36C6D1AE8EE9CADBD323B32F14B3B96 /* Pods-Thongs_Example-acknowledgements.plist */,
+				18A87A04D5191F6802CAE2750252CF7F /* Pods-Thongs_Example-dummy.m */,
+				7823F7224F0A59AADC794DAB0410D5E8 /* Pods-Thongs_Example-frameworks.sh */,
+				FFC42899BDF7B283C84741B450E34C86 /* Pods-Thongs_Example-resources.sh */,
+				874B7A1252287C0C103BBE4BA1DD32AE /* Pods-Thongs_Example-umbrella.h */,
+				B51A7794626037CB45970BFE33ACDC07 /* Pods-Thongs_Example.debug.xcconfig */,
+				4C836025128174A5CF199864557C5C9F /* Pods-Thongs_Example.release.xcconfig */,
+			);
+			name = "Pods-Thongs_Example";
+			path = "Target Support Files/Pods-Thongs_Example";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -145,32 +166,34 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DFF56393160C754CB4DEACDDE90A5FC2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E5540404EDFDCC2E321AD2A59EBC4347 /* Products */,
-				155BBD8B25FD8FE0AD56857630841023 /* Targets Support Files */,
+				BCB4CF702FBB16BD2B2C7A04B8135F01 /* Products */,
+				AD6E174606707E184ABBE7C5E16A51BF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		947AD1ED420E2D1416E64DA675E07DE3 /* Support Files */ = {
+		98FED71282F78E1795E32C64FF4FAFDC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				67A60EA7C2A046ACE5F3C1FC3314CCEF /* Info.plist */,
-				E14FA79FFA73AD23F76ABAA7EC7D6500 /* ResourceBundle-Thongs-Info.plist */,
-				B2F2288C3C03A3928A2FB8A4D2EBF31F /* Thongs.modulemap */,
-				56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */,
-				3E531A12523BABFC82FB9E6576776603 /* Thongs-dummy.m */,
-				C86CA739D23F5AB2164B2FA60EA69D6A /* Thongs-prefix.pch */,
-				58B25253D81B735D858D6DC02352FB9F /* Thongs-umbrella.h */,
+				DA43E9BAC22D948007ECDCA7389352F8 /* Thongs.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Thongs";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		B580645D2866BC09AA606032EA4786EA /* Pod */ = {
+		AD6E174606707E184ABBE7C5E16A51BF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				23DB4152833CC2330E941B9897FFDE9E /* Classes */,
+				7875C8DCE8C4CE198948183668BE1304 /* Pods-Thongs_Example */,
+				4595EAA3900110F0E69A5CF792F17BE0 /* Pods-Thongs_Tests */,
 			);
-			path = Pod;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1CF322F8320A04B50FA30EDF1A462CD /* Thongs */ = {
+			isa = PBXGroup;
+			children = (
+				98FED71282F78E1795E32C64FF4FAFDC /* Classes */,
+			);
+			path = Thongs;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -181,98 +204,104 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BCB4CF702FBB16BD2B2C7A04B8135F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A924BF350483ED3531B1C5F746EF3A9 /* Pods_Thongs_Example.framework */,
+				538F67383EC2531FDF4C98409305A5DD /* Pods_Thongs_Tests.framework */,
+				FFA2517BD665AAC019C2577F162E5F92 /* Thongs.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DFF56393160C754CB4DEACDDE90A5FC2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				38850E55C7C6A50A540B09773D9E10F0 /* Thongs */,
+				3E3F210F7BF0A6EDF43319874B25AC99 /* Thongs */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E5540404EDFDCC2E321AD2A59EBC4347 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F4F98D5BE352AED058C2159E05E2A366 /* Pods_Thongs_Tests.framework */,
-				4767C1506FC44E297F201AA21FC62C41 /* Thongs.bundle */,
-				E6BC94C8DC823EDE1D4AC2AAC8C4CF01 /* Thongs.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6AF99FB2FFACE639550F4B4AE6D2C666 /* Headers */ = {
+		0BA8563850ED43FE8B88E02D22FDEC5C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54181D283CDC4C86BAC190FDC9F9C6C0 /* Pods-Thongs_Tests-umbrella.h in Headers */,
+				CA28586ABAEB6C84D635E5CE1E0913BD /* Pods-Thongs_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D895963A7905E40DBE553DCC30732DE7 /* Headers */ = {
+		90F3B0D91C9331C6A535B1734A66BF01 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0BCD77D462E575E69E2E8FED28F6D6 /* Thongs-umbrella.h in Headers */,
+				85752B857209EADCFA67FB47AA2576DD /* Pods-Thongs_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3476E64B6B9EF121660FB4227771577 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1ED97083FD0CBD051DFB205D763BFB /* Thongs-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		01607277848B4A3948371D2910148F0E /* Thongs-Thongs */ = {
+		0F1558448F84133FF61AB442DC1F3642 /* Thongs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D66EB55DF9DBD7D4D7D6A596F0278FB7 /* Build configuration list for PBXNativeTarget "Thongs-Thongs" */;
+			buildConfigurationList = F517281AE92395AEFCA515CD9C989B67 /* Build configuration list for PBXNativeTarget "Thongs" */;
 			buildPhases = (
-				D5583C91B2C5B3375EF8F30A30AB225D /* Sources */,
-				730A73E0621AA4932F2EFB04AC2E05AC /* Frameworks */,
-				120B5108D901779428DFC1293115E60C /* Resources */,
+				965E326D938E722A99FE16940DEE1388 /* Sources */,
+				3DBB6AE90E9F0E2EDDD062EC42EA3B97 /* Frameworks */,
+				A3476E64B6B9EF121660FB4227771577 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Thongs-Thongs";
-			productName = "Thongs-Thongs";
-			productReference = 4767C1506FC44E297F201AA21FC62C41 /* Thongs.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		788E4DE2E0BA97C6C99F2575FFB5391E /* Thongs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92F2FAEFAC79BB12BF09E0BE6F64AB39 /* Build configuration list for PBXNativeTarget "Thongs" */;
-			buildPhases = (
-				6657D6C11C70FDB7ED69800E823B5A83 /* Sources */,
-				F666CAF4FECD0EDE4A5C167F7D4F4CF7 /* Frameworks */,
-				8C415A551E0BE3FFC7824B4013B0C68F /* Resources */,
-				D895963A7905E40DBE553DCC30732DE7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				249FB7E84034DD6C3010C345D3A540A2 /* PBXTargetDependency */,
 			);
 			name = Thongs;
 			productName = Thongs;
-			productReference = E6BC94C8DC823EDE1D4AC2AAC8C4CF01 /* Thongs.framework */;
+			productReference = FFA2517BD665AAC019C2577F162E5F92 /* Thongs.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FDF4F08F7F9A3C29E571494E696219AA /* Pods-Thongs_Tests */ = {
+		1A8C06BE2EF2002BFF363DB5FBE0C12C /* Pods-Thongs_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5422A56473F5FEADC4BC06B3AD6553D /* Build configuration list for PBXNativeTarget "Pods-Thongs_Tests" */;
+			buildConfigurationList = 214CF45C9B2C2E92C937902D66E1CB65 /* Build configuration list for PBXNativeTarget "Pods-Thongs_Tests" */;
 			buildPhases = (
-				2C8EA114F199079F426DA218EF1062FE /* Sources */,
-				4AA22E3E79206624D5F65C40C693A4D6 /* Frameworks */,
-				6AF99FB2FFACE639550F4B4AE6D2C666 /* Headers */,
+				AC2534FC5DDE08961032E7BA5D8F7C0B /* Sources */,
+				CE1C59F006452FF8C7796BB232BD547D /* Frameworks */,
+				90F3B0D91C9331C6A535B1734A66BF01 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D62F8837FBA3556624DFD77BD5358CA6 /* PBXTargetDependency */,
 			);
 			name = "Pods-Thongs_Tests";
 			productName = "Pods-Thongs_Tests";
-			productReference = F4F98D5BE352AED058C2159E05E2A366 /* Pods_Thongs_Tests.framework */;
+			productReference = 538F67383EC2531FDF4C98409305A5DD /* Pods_Thongs_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A2C5E3B59BB4708C8C09DF7E10E9A84 /* Pods-Thongs_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582B7328AAB3AC1F014CF97DD38E3137 /* Build configuration list for PBXNativeTarget "Pods-Thongs_Example" */;
+			buildPhases = (
+				353D9A53F306E187EAF720B635816F57 /* Sources */,
+				C555FC34A0AA7CF6B20ADFDC1A47BF3D /* Frameworks */,
+				0BA8563850ED43FE8B88E02D22FDEC5C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				680ADF7FDAA613C362C47F6B6FD4BB41 /* PBXTargetDependency */,
+			);
+			name = "Pods-Thongs_Example";
+			productName = "Pods-Thongs_Example";
+			productReference = 0A924BF350483ED3531B1C5F746EF3A9 /* Pods_Thongs_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -284,13 +313,10 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
-					01607277848B4A3948371D2910148F0E = {
+					0F1558448F84133FF61AB442DC1F3642 = {
 						LastSwiftMigration = 0800;
 					};
-					788E4DE2E0BA97C6C99F2575FFB5391E = {
-						LastSwiftMigration = 0800;
-					};
-					FDF4F08F7F9A3C29E571494E696219AA = {
+					9A2C5E3B59BB4708C8C09DF7E10E9A84 = {
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -303,78 +329,88 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E5540404EDFDCC2E321AD2A59EBC4347 /* Products */;
+			productRefGroup = BCB4CF702FBB16BD2B2C7A04B8135F01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDF4F08F7F9A3C29E571494E696219AA /* Pods-Thongs_Tests */,
-				788E4DE2E0BA97C6C99F2575FFB5391E /* Thongs */,
-				01607277848B4A3948371D2910148F0E /* Thongs-Thongs */,
+				9A2C5E3B59BB4708C8C09DF7E10E9A84 /* Pods-Thongs_Example */,
+				1A8C06BE2EF2002BFF363DB5FBE0C12C /* Pods-Thongs_Tests */,
+				0F1558448F84133FF61AB442DC1F3642 /* Thongs */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		120B5108D901779428DFC1293115E60C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C415A551E0BE3FFC7824B4013B0C68F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1247A4F882D3B78E67C31C37245FC59 /* Thongs.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2C8EA114F199079F426DA218EF1062FE /* Sources */ = {
+		353D9A53F306E187EAF720B635816F57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336D63183BCCBB0A98CAB6563788EB4E /* Pods-Thongs_Tests-dummy.m in Sources */,
+				370A66D2611E54639C95B9D9FF256690 /* Pods-Thongs_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6657D6C11C70FDB7ED69800E823B5A83 /* Sources */ = {
+		965E326D938E722A99FE16940DEE1388 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012A63FB7A8DECF1B48A6C0EA8909029 /* Thongs-dummy.m in Sources */,
-				49B4F79C87B73339A869AB93EC4F8C71 /* Thongs.swift in Sources */,
+				CE0A27D6F2A5701D8E698608F52D55F4 /* Thongs.swift in Sources */,
+				8B4D5D101340D3981E265D0D1C55728A /* Thongs-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5583C91B2C5B3375EF8F30A30AB225D /* Sources */ = {
+		AC2534FC5DDE08961032E7BA5D8F7C0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612B33504981E5223722462AB867D060 /* Pods-Thongs_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		249FB7E84034DD6C3010C345D3A540A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Thongs-Thongs";
-			target = 01607277848B4A3948371D2910148F0E /* Thongs-Thongs */;
-			targetProxy = 2E4349C493E95DBC7C4BF50F9435634A /* PBXContainerItemProxy */;
-		};
-		D62F8837FBA3556624DFD77BD5358CA6 /* PBXTargetDependency */ = {
+		680ADF7FDAA613C362C47F6B6FD4BB41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Thongs;
-			target = 788E4DE2E0BA97C6C99F2575FFB5391E /* Thongs */;
-			targetProxy = 92A822372061CE611A318FAA9074175B /* PBXContainerItemProxy */;
+			target = 0F1558448F84133FF61AB442DC1F3642 /* Thongs */;
+			targetProxy = 49713173321A6D858BBA539153B57206 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0992DE3C4C5576EB6B3ABCCE5DE80CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C936E8E4049A799ED32CB673EB325FE5 /* Pods-Thongs_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Tests/Pods-Thongs_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thongs_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,9 +449,44 @@
 			};
 			name = Release;
 		};
-		2398E8657133F1EED3DF3519F6D40CF2 /* Release */ = {
+		1A0235C87CC7C08866524A3F1C9321C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */;
+			baseConfigurationReference = B51A7794626037CB45970BFE33ACDC07 /* Pods-Thongs_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Example/Pods-Thongs_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thongs_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42C08831BD128A03F1041AF72609A1A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A00026A1B9496AC9F14896322ECBFDE /* Thongs.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -443,9 +514,42 @@
 			};
 			name = Release;
 		};
-		3118584EDEC9F3EAE90E7A394D1E93E1 /* Debug */ = {
+		538BD6E8A3CA4ADDED382119A4BFDC1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */;
+			baseConfigurationReference = 5C1E4A76153F79088C47A7426439160E /* Pods-Thongs_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Tests/Pods-Thongs_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Thongs_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EE3F7ED060746A1850745661016E396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A00026A1B9496AC9F14896322ECBFDE /* Thongs.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -474,44 +578,9 @@
 			};
 			name = Debug;
 		};
-		8760C287A682B43B576F6CC928F1C854 /* Debug */ = {
+		7A824E21E8335CB5470F6B92436DDF49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAE938E1CA4BACA5D172C0A0BC544EFF /* Pods-Thongs_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Tests/Pods-Thongs_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Thongs_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8917169F7586AC0E0F544FF95138E83E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 926B69F0DC705FCCF63992727B742E44 /* Pods-Thongs_Tests.release.xcconfig */;
+			baseConfigurationReference = 4C836025128174A5CF199864557C5C9F /* Pods-Thongs_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -522,18 +591,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Thongs_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Tests/Pods-Thongs_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Thongs_Example/Pods-Thongs_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Thongs_Tests;
+				PRODUCT_NAME = Pods_Thongs_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -542,42 +611,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		897E4A1C9FF63DC47F31472F0143A2EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Thongs";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Thongs/ResourceBundle-Thongs-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Thongs;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B500896F434DE943A7BEC3DAF13A5C64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5600E91F6EC5D4DE942D516043400 /* Thongs.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Thongs";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Thongs/ResourceBundle-Thongs-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Thongs;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -624,6 +657,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		214CF45C9B2C2E92C937902D66E1CB65 /* Build configuration list for PBXNativeTarget "Pods-Thongs_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0992DE3C4C5576EB6B3ABCCE5DE80CDC /* Debug */,
+				538BD6E8A3CA4ADDED382119A4BFDC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -633,29 +675,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92F2FAEFAC79BB12BF09E0BE6F64AB39 /* Build configuration list for PBXNativeTarget "Thongs" */ = {
+		582B7328AAB3AC1F014CF97DD38E3137 /* Build configuration list for PBXNativeTarget "Pods-Thongs_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3118584EDEC9F3EAE90E7A394D1E93E1 /* Debug */,
-				2398E8657133F1EED3DF3519F6D40CF2 /* Release */,
+				1A0235C87CC7C08866524A3F1C9321C8 /* Debug */,
+				7A824E21E8335CB5470F6B92436DDF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5422A56473F5FEADC4BC06B3AD6553D /* Build configuration list for PBXNativeTarget "Pods-Thongs_Tests" */ = {
+		F517281AE92395AEFCA515CD9C989B67 /* Build configuration list for PBXNativeTarget "Thongs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8760C287A682B43B576F6CC928F1C854 /* Debug */,
-				8917169F7586AC0E0F544FF95138E83E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D66EB55DF9DBD7D4D7D6A596F0278FB7 /* Build configuration list for PBXNativeTarget "Thongs-Thongs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B500896F434DE943A7BEC3DAF13A5C64 /* Debug */,
-				897E4A1C9FF63DC47F31472F0143A2EE /* Release */,
+				6EE3F7ED060746A1850745661016E396 /* Debug */,
+				42C08831BD128A03F1041AF72609A1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
