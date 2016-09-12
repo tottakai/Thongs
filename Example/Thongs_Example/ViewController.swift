@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let titleLabel = UILabel(frame: CGRect(x: 20, y: 44, width: view.bounds.size.width-2*20, height: 40))
         
-        let textBox = UITextView(frame: CGRect(x: CGRectGetMinX(titleLabel.frame) , y: CGRectGetMaxY(titleLabel.frame) + 20, width: titleLabel.frame.size.width, height: view.bounds.size.height - CGRectGetMaxY(titleLabel.frame) - 2*20))
+        let textBox = UITextView(frame: CGRect(x: titleLabel.frame.minX , y: titleLabel.frame.maxY + 20, width: titleLabel.frame.size.width, height: view.bounds.size.height - titleLabel.frame.maxY - 2*20))
         
         view.addSubview(titleLabel)
         view.addSubview(textBox)
