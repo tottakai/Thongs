@@ -1,7 +1,10 @@
+import UIKit
+import XCTest
 import Thongs
 
-let largeFont = UIFont.boldSystemFontOfSize(23)
-let smallFont = UIFont.boldSystemFontOfSize(11)
+
+let largeFont = UIFont.boldSystemFont(ofSize: 23)
+let smallFont = UIFont.boldSystemFont(ofSize: 11)
 
 extension String {
     var length : Int {
@@ -33,6 +36,16 @@ func containsAttribute(_ key: String, _ value: String) -> MatcherFunc<NSAttribut
         }
     }
 }
+
+
+class Tests: XCTestCase {
+    
+    func testExample() {
+        // This is an example of a functional test case.
+        XCTAssert(true, "Pass")
+    }
+}
+
 
 /*
 class ThongsSpec: QuickSpec {
