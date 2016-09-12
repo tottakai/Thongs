@@ -56,13 +56,13 @@ class Tests: XCTestCase {
     
     func testAttributed_string_length_and_content_is_the_string() {
         let example = "foo"
-        XCTAssert(thongs_string(example).length == example.length)
-        XCTAssert(thongs_string(example).string == example)
+        XCTAssert(Thongs.string(example).length == example.length)
+        XCTAssert(Thongs.string(example).string == example)
     }
 
     func testLarge_font_string_length_and_content_matches_string_length() {
         let example = "test string"
-        let sample = thongs_font(largeFont)(thongs_string(example))
+        let sample = Thongs.font(largeFont)(Thongs.string(example))
         
         XCTAssert(sample.length == example.length)
         XCTAssert(sample.string == example)
@@ -75,8 +75,8 @@ class Tests: XCTestCase {
     }
 
     func testCreate_string_formatter_and_apply_it_to_string() {
-        let formatter = thongs_color(UIColor.red) <*> thongs_font(largeFont)
-        let result = formatter(thongs_string("jee"))
+        let formatter = Thongs.color(UIColor.red) <*> Thongs.font(largeFont)
+        let result = formatter(Thongs.string("jee"))
         
         XCTAssert(result.length == "jee".length)
         XCTAssert(result.string == "jee")
@@ -91,9 +91,9 @@ class Tests: XCTestCase {
     
     func testOperator_piping_produced_same_string_as_function_composition() {
         let example = "test string"
-        let red = thongs_color(UIColor.red)
-        let large = thongs_font(largeFont)
-        let result = (red <*> large)(thongs_string(example))
+        let red = Thongs.color(UIColor.red)
+        let large = Thongs.font(largeFont)
+        let result = (red <*> large)(Thongs.string(example))
         
         XCTAssert(result.length == example.length)
         XCTAssert(result.string == example)
@@ -101,8 +101,8 @@ class Tests: XCTestCase {
  
     func testAttributed_string_creation_with_operators_created_intended_text() {
         let example = "test string"
-        let red = thongs_color(UIColor.red)
-        let large = thongs_font(largeFont)
+        let red = Thongs.color(UIColor.red)
+        let large = Thongs.font(largeFont)
         let result = (red <*> large) ~~> example
         
         XCTAssert(result.length == example.length)
@@ -117,10 +117,10 @@ class Tests: XCTestCase {
     }
     
     func testString_concatenation_with_function_composition() {
-        let red = thongs_color(UIColor.red)
-        let blue = thongs_color(UIColor.blue)
-        let large = thongs_font(largeFont)
-        let small = thongs_font(smallFont)
+        let red = Thongs.color(UIColor.red)
+        let blue = Thongs.color(UIColor.blue)
+        let large = Thongs.font(largeFont)
+        let small = Thongs.font(smallFont)
         let result = (red <*> large) ~~> "two" <+> (small <*> blue) ~~> "three"
         
         XCTAssert(result.length == "twothree".length)
@@ -140,9 +140,9 @@ class Tests: XCTestCase {
     }
     
     func testCombine_multiple_string_to_text() {
-        let formatter = thongs_color(UIColor.red) <*> thongs_font(largeFont)
-        let formatter2 = thongs_color(UIColor.blue) <*> thongs_font(smallFont)
-        let result = formatter ~~> "two" <+> thongs_string(" ") <+> formatter2 ~~> "three"
+        let formatter = Thongs.color(UIColor.red) <*> Thongs.font(largeFont)
+        let formatter2 = Thongs.color(UIColor.blue) <*> Thongs.font(smallFont)
+        let result = formatter ~~> "two" <+> Thongs.string(" ") <+> formatter2 ~~> "three"
         
         XCTAssert(result.length == "two three".length)
         XCTAssert(result.string == "two three")
