@@ -37,7 +37,7 @@ func fontAttribute(_ description: String) -> (AnyHashable, Any) -> Bool {
     }
 }
 
-func colorAttribute(_ description: String) -> (AnyHashable, Any) -> Bool {
+func colorAttribute(_ referenceColor: UIColor) -> (AnyHashable, Any) -> Bool {
     return { (key: AnyHashable, value: Any) in
         guard let attributeName = key.base as? String, attributeName == "NSColor" else {
             return false
@@ -47,7 +47,7 @@ func colorAttribute(_ description: String) -> (AnyHashable, Any) -> Bool {
             return false
         }
         
-        return color.description == description
+        return color == referenceColor
     }
 }
 
@@ -83,7 +83,7 @@ class Tests: XCTestCase {
         
         let attributesOfFirstWord = result.attributesAt(0, result.length)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 1 0 0 1")))
+        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute(UIColor.red)))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-weight: bold")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-size: 23.00pt")))
@@ -110,7 +110,7 @@ class Tests: XCTestCase {
         
         let attributesOfFirstWord = result.attributesAt(0, example.length)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 1 0 0 1")))
+        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute(UIColor.red)))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-weight: bold")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-size: 23.00pt")))
@@ -128,13 +128,13 @@ class Tests: XCTestCase {
         
         let attributesOfFirstWord = result.attributesAt(0, 3)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 1 0 0 1")))
+        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute(UIColor.red)))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-size: 23.00pt")))
         
         let attributesOfSecondWord = result.attributesAt(3, 5)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfSecondWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 0 0 1 1")))
+        XCTAssert(attributesOfSecondWord.contains(where: colorAttribute(UIColor.blue)))
         XCTAssert(attributesOfSecondWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfSecondWord.contains(where: fontAttribute("font-size: 11.00pt")))
     }
@@ -149,7 +149,7 @@ class Tests: XCTestCase {
         
         let attributesOfFirstWord = result.attributesAt(0, 3)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 1 0 0 1")))
+        XCTAssert(attributesOfFirstWord.contains(where: colorAttribute(UIColor.red)))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfFirstWord.contains(where: fontAttribute("font-size: 23.00pt")))
         
@@ -158,7 +158,7 @@ class Tests: XCTestCase {
         
         let attributesOfSecondWord = result.attributesAt(4, 5)
         XCTAssert(attributesOfFirstWord.count == 2)
-        XCTAssert(attributesOfSecondWord.contains(where: colorAttribute("UIExtendedSRGBColorSpace 0 0 1 1")))
+        XCTAssert(attributesOfSecondWord.contains(where: colorAttribute(UIColor.blue)))
         XCTAssert(attributesOfSecondWord.contains(where: fontAttribute("font-style: normal")))
         XCTAssert(attributesOfSecondWord.contains(where: fontAttribute("font-size: 11.00pt")))
     }
