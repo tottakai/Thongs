@@ -18,5 +18,5 @@ install:
 
 script:
 - set -o pipefail
-- xcodebuild -workspace "$WORKSPACE" -scheme Thongs-Example -sdk "$SDK" -destination "$DESTINATION" build test | xcpretty -c
+- xcodebuild -workspace "$WORKSPACE" -scheme Thongs-Example -sdk "$SDK" -destination "$DESTINATION" build test
 - pod lib lint --quick
