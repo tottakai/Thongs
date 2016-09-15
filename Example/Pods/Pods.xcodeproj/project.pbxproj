@@ -450,6 +450,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -656,6 +657,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
