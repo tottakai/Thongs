@@ -130,8 +130,9 @@ class Tests: XCTestCase {
     
     func testCombine_multiple_string_to_text() {
         let formatter = Thongs.color(UIColor.red) <*> Thongs.font(largeFont)
-        let formatter2 = Thongs.color(UIColor.blue) <*> Thongs.font(smallFont)
-        let result = formatter ~~> "two" <+> Thongs.string(" ") <+> formatter2 ~~> "three"
+        let result = formatter ~~> "two" <+> 
+            Thongs.string(" ") <+> 
+            Thongs.color(UIColor.blue) <*> Thongs.font(smallFont) ~~> "three"
         
         XCTAssert(result.length == "two three".length)
         XCTAssert(result.string == "two three")

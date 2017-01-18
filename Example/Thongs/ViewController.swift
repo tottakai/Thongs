@@ -37,14 +37,14 @@ class ViewController: UIViewController {
         let formatter3 = bodyTextFontStyle1 <*> Thongs.color(UIColor(red: 232/255, green: 126/255, blue: 4/255, alpha: 1))
         let formatter4 = bodyTextFontStyle2 <*> Thongs.color(UIColor(red: 191/255, green: 85/255, blue: 236/255, alpha: 1))
         let formatter5 = bodyTextFontStyle1 <*> Thongs.color(UIColor(red: 245/255, green: 215/255, blue: 110/255, alpha: 1))
-        let formatter6 = bodyTextFontStyle2 <*> Thongs.color(UIColor(red: 103/255, green: 65/255, blue: 114/255, alpha: 1))
+        let formattedLine = Thongs.font(UIFont(name: "Courier", size: 16)!) <*> Thongs.color(UIColor(red: 103/255, green: 65/255, blue: 114/255, alpha: 1)) ~~> "Check it out\n"
 
         textBox.attributedText = formatter1 ~~> "Is lettin all the ladies know\n" <+>
                                  formatter2 ~~> "What guys talk about\n" <+>
                                  formatter3 ~~> "You know\n" <+>
                                  formatter4 ~~> "The finer things in life\n" <+>
                                  formatter5 ~~> "Hahaha\n" <+>
-                                 formatter6 ~~> "Check it out\n"
+                                formattedLine
     }
 }
 

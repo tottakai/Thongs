@@ -65,7 +65,7 @@ public enum Thongs {
 
 precedencegroup LiftPrecedence {
     associativity: left
-    higherThan: CompositionPrecedence
+    higherThan: ConcatenationPrecedence
 }
 
 infix operator ~~> : LiftPrecedence
@@ -77,7 +77,7 @@ public func ~~> (composer: @escaping Thongs.Composer, text: String) -> NSAttribu
 
 precedencegroup CompositionPrecedence {
     associativity: left
-    higherThan: ConcatenationPrecedence
+    higherThan: LiftPrecedence
 }
 
 infix operator <*> : CompositionPrecedence
