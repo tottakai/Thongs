@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Thongs"
-  s.version          = "0.9.2"
+  s.version          = "0.9.3"
   s.summary          = "Functional library for NSAttributedString creation in swift 3.0."
 
 # This description is used to generate tags and improve search results.
