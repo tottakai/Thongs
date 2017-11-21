@@ -8,7 +8,7 @@ let smallFont = UIFont(name: "Courier", size: 11)!
 
 extension String {
     var length : Int {
-        return self.length
+        return self.count
     }
 }
 
@@ -22,7 +22,7 @@ extension NSAttributedString {
 
 func fontAttribute(_ referenceFont: UIFont) -> (AnyHashable, Any) -> Bool {
     return { (key: AnyHashable, value: Any) in
-        guard let attributeName = key.base as? String, attributeName == "NSFont" else {
+        guard let attributeName = key.base as? NSString, attributeName == "NSFont" else {
             return false
         }
         
@@ -36,7 +36,7 @@ func fontAttribute(_ referenceFont: UIFont) -> (AnyHashable, Any) -> Bool {
 
 func colorAttribute(_ referenceColor: UIColor) -> (AnyHashable, Any) -> Bool {
     return { (key: AnyHashable, value: Any) in
-        guard let attributeName = key.base as? String, attributeName == "NSColor" else {
+        guard let attributeName = key.base as? NSString, attributeName == "NSColor" else {
             return false
         }
         
