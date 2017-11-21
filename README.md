@@ -1,4 +1,4 @@
-Thongs is a library for making NSAttributedString creation humane in Swift 3. 
+Thongs is a library for making NSAttributedString creation humane in Swift 4. 
 
 [![CI Status](http://img.shields.io/travis/tottakai/Thongs.svg?style=flat)](https://travis-ci.org/tottakai/Thongs)
 [![Version](https://img.shields.io/cocoapods/v/Thongs.svg?style=flat)](http://cocoapods.org/pods/Thongs)
