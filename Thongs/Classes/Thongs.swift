@@ -13,7 +13,7 @@ public enum Thongs {
         return { attributedString in
             let s = attributedString.mutableCopy() as! NSMutableAttributedString
             s.beginEditing()
-            s.addAttribute(NSFontAttributeName, value: font, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.font, value: font, range: NSMakeRange(0, attributedString.length))
             s.endEditing()
             return s
         }
@@ -22,7 +22,7 @@ public enum Thongs {
     public static func color(_ color: UIColor) -> Composer {
         return { attributedString in
             let s = attributedString.mutableCopy() as! NSMutableAttributedString
-            s.addAttribute(NSForegroundColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSMakeRange(0, attributedString.length))
             return s
         }
     }
@@ -30,7 +30,7 @@ public enum Thongs {
     public static func kerning(_ kerning: Double) -> Composer {
         return { attributedString in
             let s = attributedString.mutableCopy() as! NSMutableAttributedString
-            s.addAttribute(NSKernAttributeName, value: kerning, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.kern, value: kerning, range: NSMakeRange(0, attributedString.length))
             return s
         }
     }
@@ -38,8 +38,8 @@ public enum Thongs {
     public static func underline(_ color: UIColor, style: NSUnderlineStyle) -> Composer {
         return { attributedString in
             let s = attributedString.mutableCopy() as! NSMutableAttributedString
-            s.addAttribute(NSUnderlineColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
-            s.addAttribute(NSUnderlineStyleAttributeName, value: style.rawValue, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.underlineColor, value: color, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.underlineStyle, value: style.rawValue, range: NSMakeRange(0, attributedString.length))
             return s
         }
     }
@@ -47,8 +47,8 @@ public enum Thongs {
     public static func strikethrough(_ color: UIColor, style: NSUnderlineStyle) -> Composer {
         return { attributedString in
             let s = attributedString.mutableCopy() as! NSMutableAttributedString
-            s.addAttribute(NSStrikethroughColorAttributeName, value: color, range: NSMakeRange(0, attributedString.length))
-            s.addAttribute(NSStrikethroughStyleAttributeName, value: style.rawValue, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.strikethroughColor, value: color, range: NSMakeRange(0, attributedString.length))
+            s.addAttribute(NSAttributedStringKey.strikethroughStyle, value: style.rawValue, range: NSMakeRange(0, attributedString.length))
             return s
         }
     }

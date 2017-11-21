@@ -8,7 +8,7 @@ let smallFont = UIFont(name: "Courier", size: 11)!
 
 extension String {
     var length : Int {
-        return self.characters.count
+        return self.length
     }
 }
 
